@@ -1,0 +1,28 @@
+.home-container {
+    text-align: center;
+    background-color: crimson;
+    color: white;
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-section, .photo-section {
+    border: 2px solid rgb(61, 57, 57);
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 45%; /* Adjusts the width of each section */
+}
+
+.photo-section img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto;
+}

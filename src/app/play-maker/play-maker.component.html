@@ -1,0 +1,21 @@
+<div class="playmaker-container">
+   <!--  Map Selector   -->
+    <div class="map-selector">
+        <mat-form-field appearance="fill">
+            <mat-label>Select a Map</mat-label>
+            <mat-select (selectionChange)="onMapSelect($event.value)">
+                <mat-option *ngFor="let map of maps" [value]="map">
+                    {{ map.name }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    
+    <!--  Page Content   -->
+    <div class="content-wrapper">
+        <div class="icon-container">
+            <!-- Future icon components will go here -->
+        </div>
+        <img [src]="selectedMapUrl" alt="Selected Map" class="map-image">
+    </div>
+</div>
