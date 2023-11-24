@@ -13,6 +13,7 @@ export class PlayMakerComponent {
     }
   }
 
+
   maps: MapItem[] = [
     { name: 'Ascent', url: '../../assets/Images/Maps/Ascent.png' },
     { name: 'Bind', url: '../../assets/Images/Maps/Bind.png' },
@@ -28,11 +29,17 @@ export class PlayMakerComponent {
     '../../assets/Images/Agents/Jett/jett.png',
     '../../assets/Images/Agents/Pheonix/pheonix.png'
     
-];
+  ];
 
   selectedMapUrl = '';
+
+  showAgents = false;
 
   onMapSelect(selectedMap: MapItem) {
       this.selectedMapUrl = selectedMap.url;
   }
+
+  toggleAgents() {
+    this.showAgents = !this.showAgents;
+}
 }

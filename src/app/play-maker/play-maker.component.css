@@ -32,3 +32,38 @@
     z-index: 100; 
     padding: 10px; 
 }
+
+.disIcons {
+    
+    background-color: rgb(62, 62, 62);
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 20px; /* Space between the icons and the image */
+    display: flex; 
+    flex-direction: row; /* Align in a row */
+    justify-content: flex-start; /* Align to the start */
+    flex-wrap: wrap; /* Allows icons to wrap to the next line if needed */
+    
+}
+
+
+.dropdown-section {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex; /* Align children elements in a row */
+    align-items: center; /* Vertically center the icon and title */
+    justify-content: center;
+}
+
+.dropdown-title {
+    color: white;
+    margin: 0;
+}
+
+.dropdown-icon {
+    margin-right: 5px; /* Space between the icon and title */
+    
+}

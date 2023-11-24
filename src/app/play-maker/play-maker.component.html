@@ -14,7 +14,13 @@
     <!--  Page Content   -->
     <div class="content-wrapper">
         <div class="icon-container">
-            <app-player-icon *ngFor="let iconUrl of playerIconUrls" [iconUrl]="iconUrl"></app-player-icon>
+            <div class="dropdown-section" (click)="toggleAgents()">
+                <span class="dropdown-icon">{{ showAgents ? '-' : '▼' }}</span>
+                <p class="dropdown-title">Agents</p>
+            </div>
+            <div class="disIcons" *ngIf="showAgents">
+                <app-player-icon *ngFor="let iconUrl of playerIconUrls" [iconUrl]="iconUrl"></app-player-icon>
+            </div>
         </div>
         <img [src]="selectedMapUrl" alt="Selected Map" class="map-image">
     </div>
