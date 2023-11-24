@@ -1,0 +1,8 @@
+.player-icon {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; /* Makes it circular */
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #fff; /*  border */
+}

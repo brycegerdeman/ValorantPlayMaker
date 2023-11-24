@@ -8,6 +8,7 @@
 .map-image {
     max-width: 80%;
     height: auto;
+    align-self: flex-start;
     margin-top: 20px;
 }
 

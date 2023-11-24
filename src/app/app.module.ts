@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { PlayMakerComponent } from './play-maker/play-maker.component';
 import { MatSelectModule } from '@angular/material/select';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { PlayerIconComponent } from './player-icon/player-icon.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import { AboutPageComponent } from './about-page/about-page.component';
     HeaderComponent,
     HomeComponent,
     PlayMakerComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    PlayerIconComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatSelectModule
+    MatSelectModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

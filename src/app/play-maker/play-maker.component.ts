@@ -21,6 +21,15 @@ export class PlayMakerComponent {
     
   ];
 
+  playerIconUrls = [
+    '../../assets/Images/Agents/Breach/breach.png',
+    '../../assets/Images/Agents/Brimstone/brimstone.png',
+    '../../assets/Images/Agents/Cypher/cypher.png',
+    '../../assets/Images/Agents/Jett/jett.png',
+    '../../assets/Images/Agents/Pheonix/pheonix.png'
+    
+];
+
   selectedMapUrl = '';
 
   onMapSelect(selectedMap: MapItem) {

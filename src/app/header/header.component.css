@@ -1,19 +1,36 @@
 mat-toolbar {
-    background-color: black; 
-    justify-content: center; 
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
     height: 64px;
+    justify-content: center;
 }
 
 .navButton {
     font-size: large;
-    background-color: black; 
-    color:white;
-    height: 100%; 
-    width:13%;
-    border: 1px solid black; 
-    line-height: 64px;
+    background-color: black;
+    color: white;
+    height: 100%;
+    border: 1px solid black;
+    height: 64px;
+    
+}
+
+.toolbar-title {
+    position: absolute; 
+    left: 0; 
+    margin-left: 15px; 
+    margin-top: 12px;
 }
 
 .navButton:hover {
     background-color: rgba(255, 255, 255, 0.1); 
 }
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+}
+

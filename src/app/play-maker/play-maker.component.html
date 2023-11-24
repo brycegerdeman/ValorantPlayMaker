@@ -14,7 +14,7 @@
     <!--  Page Content   -->
     <div class="content-wrapper">
         <div class="icon-container">
-            <!-- Future icon components will go here -->
+            <app-player-icon *ngFor="let iconUrl of playerIconUrls" [iconUrl]="iconUrl"></app-player-icon>
         </div>
         <img [src]="selectedMapUrl" alt="Selected Map" class="map-image">
     </div>
