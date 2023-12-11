@@ -3,8 +3,12 @@
     <p>ValGrind</p>
   </div>
   <div class="nav-buttons">
-      <button class="navButton" mat-button routerLink="/">Home</button>
-      <button class="navButton" mat-button routerLink="/playmaker">Playmaker</button>
-      <button class="navButton" mat-button routerLink="/about">About</button>
+    <button class="navButton" mat-button routerLink="/">Home</button>
+    <button class="navButton" mat-button routerLink="/slides">Slides</button>
+    <button *ngIf="loggedIn" class="navButton" mat-button routerLink="/playmaker">Playmaker</button>
+    <button *ngIf="!loggedIn" class="navButton" mat-button (click)="onLogin()">Login/Create Account</button>
   </div>
+  <button *ngIf="loggedIn" mat-mini-fab class="user-profile-button" (click)="navigateToProfile()">
+    <mat-icon>person</mat-icon>
+  </button>
   </mat-toolbar>

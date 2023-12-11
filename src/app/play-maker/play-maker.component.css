@@ -6,10 +6,11 @@
 }
 
 .map-image {
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     align-self: flex-start;
     margin-top: 20px;
+    margin-right: 100px;
 }
 
 .content-wrapper {
@@ -56,6 +57,8 @@
     display: flex; /* Align children elements in a row */
     align-items: center; /* Vertically center the icon and title */
     justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 25px;
 }
 
 .dropdown-title {
@@ -66,4 +69,22 @@
 .dropdown-icon {
     margin-right: 5px; /* Space between the icon and title */
     
+}
+
+.abilities-toggle-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ability-toggle-image {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+.ability-header {
+    margin-top: 100px;
 }

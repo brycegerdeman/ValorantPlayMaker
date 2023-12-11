@@ -34,3 +34,9 @@ mat-toolbar {
     justify-content: center;
 }
 
+.user-profile-button {
+    position: fixed;
+    bottom: 20px;  
+    right: 20px;   
+    z-index: 998; 
+  }

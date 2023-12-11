@@ -12,6 +12,11 @@ import { MatSelectModule } from '@angular/material/select';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { PlayerIconComponent } from './player-icon/player-icon.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +25,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     HomeComponent,
     PlayMakerComponent,
     AboutPageComponent,
-    PlayerIconComponent
+    PlayerIconComponent,
+    LoginComponent,
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +35,9 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSelectModule,
-    DragDropModule
+    DragDropModule,
+    FormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

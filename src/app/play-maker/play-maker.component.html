@@ -18,9 +18,31 @@
                 <span class="dropdown-icon">{{ showAgents ? '-' : '▼' }}</span>
                 <p class="dropdown-title">Agents</p>
             </div>
-            <div class="disIcons" *ngIf="showAgents">
-                <app-player-icon *ngFor="let iconUrl of playerIconUrls" [iconUrl]="iconUrl"></app-player-icon>
+                <div class="disIcons" *ngIf="showAgents">
+                    <app-player-icon *ngFor="let iconUrl of playerIconUrls" [iconUrl]="iconUrl"></app-player-icon>
+                </div>
+
+            <div class="dropdown-section" (click)="toggleMarkers()">
+                <span class="dropdown-icon">{{ showMarkers ? '−' : '▼' }}</span>
+                <p class="dropdown-title">Markers</p>
             </div>
+                <div class="disIcons" *ngIf="showMarkers">
+                    <app-player-icon *ngFor="let iconUrl of markerIconUrls" [iconUrl]="iconUrl"></app-player-icon>
+                </div>
+                <h4 class="ability-header"><u>Agent Abilities</u></h4>
+                <div class="abilities-toggle-row">
+                    <img *ngFor="let dropdown of AgentAbilities; let i = index" 
+                         [src]="dropdown.toggleImageUrl" 
+                         class="ability-toggle-image"
+                         (click)="toggleNestedDropdown(i)" 
+                         [alt]="dropdown.name">
+                </div>
+                <ng-container *ngFor="let dropdown of AgentAbilities; let i = index">
+                    <div class="disIcons" *ngIf="currentAbilityIndex === i">
+                        <app-player-icon *ngFor="let iconUrl of dropdown.icons" [iconUrl]="iconUrl"></app-player-icon>
+                    </div>
+                </ng-container>
+
         </div>
         <img [src]="selectedMapUrl" alt="Selected Map" class="map-image">
     </div>
